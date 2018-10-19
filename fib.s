@@ -38,7 +38,7 @@ loop:   LD      $s2, cnt(R0) ;;
         j loop
 exit:   LD      $s2, N(R0)
         DSLL    $s2, $s2, 3
-        ;;LD      R2, f($s2)
+        LD      R2, f($s2)
         SD      R2, y(R0)
         ;; Store your answer in "y" like above.
         
